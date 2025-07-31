@@ -1,0 +1,444 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Light grey background */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main Attendance Card Container */
+.attendance-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    width: clamp(300px, 90vw, 700px); /* Responsive width */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Spacing between major sections */
+}
+
+/* Top Status Section (Clock In/Out) */
+.top-status {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    gap: 30px; /* Space between clock boxes and connector line */
+    margin-bottom: 20px; /* Space below this section */
+}
+
+.clock-box {
+    background-color: #f7f9fc; /* Very light grey */
+    border-radius: 15px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 150px; /* Fixed width for consistency */
+    text-align: center;
+}
+
+.clock-box .icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+    display: block; /* Ensure icon takes full line */
+}
+
+.clock-box p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+    font-weight: 500;
+}
+
+.clock-in .icon {
+    color: #4CAF50; /* Green */
+}
+
+.clock-out .icon {
+    color: #F44336; /* Red */
+}
+
+/* Simplified Straight Dotted Connector Line */
+.connector-line {
+    width: 80px; /* Length of the line */
+    border-top: 2px dotted #ccc; /* Light grey dotted line */
+}
+
+/* User Info and Time Section */
+.user-info-and-time {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between;
+    gap: 30px; /* Space between user profile and time display */
+    border-top: 1px solid #eee; /* Separator line */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0; /* Prevent shrinking profile section */
+    margin-left: 85px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    background-color: #e0f7fa; /* Light blue background for icon */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em; /* For emoji */
+    margin-bottom: 10px;
+    overflow: hidden; /* To hide parts of emoji if needed */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.user-name {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.user-title {
+    font-size: 0.95em;
+    color: #777;
+    margin: 0;
+}
+
+.time-display {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between current time and break time */
+    text-align: center;
+    flex-grow: 1; /* Allow time display to take available space */
+}
+
+.time-display > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-display .label {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.time-display .value {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #333; /* Default dark text */
+}
+
+.green-text {
+    color: #4CAF50;
+}
+
+.red-text {
+    color: #F44336;
+}
+
+/* Action Buttons Section */
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    flex-grow: 1; /* Make buttons take equal width */
+    max-width: 200px; /* Max width for buttons */
+}
+
+.button.green-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button.red-button {
+    background-color: #F44336;
+    color: white;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .attendance-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .top-status {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .connector-line {
+        display: none; /* Hide connector line on small screens */
+    }
+
+    .user-info-and-time {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .time-display {
+        flex-direction: row; /* Display current and break time side-by-side */
+        justify-content: space-around;
+        width: 100%; /* Ensure it spans full width */
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .button {
+        width: 100%;
+        max-width: none; /* Remove max-width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .attendance-card {
+        border-radius: 15px;
+    }
+    .clock-box {
+        width: 120px;
+        padding: 15px 20px;
+    }
+    .clock-box .icon {
+        font-size: 2.5em;
+    }
+    .clock-box p {
+        font-size: 1em;
+    }
+    .profile-pic {
+        width: 70px;
+        height: 70px;
+        font-size: 2.5em;
+    }
+    .user-name {
+        font-size: 1.1em;
+    }
+    .user-title {
+        font-size: 0.85em;
+    }
+    .time-display .value {
+        font-size: 1.8em;
+    }
+    .button {
+        padding: 12px 20px;
+        font-size: 1em
+    }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.attendance-card {
+  background: #f0f6ff;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 25px rgba(0, 50, 100, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #0a2540;
+}
+
+.top-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clock-box {
+  width: 140px;
+  height: 140px;
+  background: #e2ecff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 50, 100, 0.08);
+}
+
+.clock-box:hover {
+  background: #d0e4ff;
+}
+
+.clock-in .icon {
+  color: #1e90ff;
+  font-size: 2.5rem;
+}
+
+.clock-out .icon {
+  color: #ff4c4c;
+  font-size: 2.5rem;
+}
+
+.connector-line {
+  flex-grow: 1;
+  height: 2px;
+  border-top: 2px dashed #b0c4de;
+  margin: 0 1rem;
+}
+
+.user-info-and-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  border-top: 1px solid #d0dce9;
+  padding-top: 1.5rem;
+}
+
+.user-profile {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  background: #cce3ff;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.user-title {
+  font-size: 0.9rem;
+  color: #5b7a99;
+}
+
+.time-display {
+  text-align: right;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.green-text {
+  color: #2e8b57;
+}
+
+.red-text {
+  color: #c0392b;
+}
+
+.value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 48%;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.red-button {
+  background: #007bff;
+  color: white;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 37, 64, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+}

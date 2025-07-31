@@ -1,0 +1,47 @@
+.main-div{
+    display: flex;
+    flex-direction: row;
+}
+.dash{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top{
+    height: 75px;
+    background-color: rgba(38, 38, 245, 0.918);
+}
+.admind{
+    text-align: center;
+}
+.menu{
+    color: rgba(38, 38, 245, 0.918);
+    margin-left: 20px;
+    font-size: 20px;
+}
+.emp{
+    height: 50px;
+    border-radius: 8px;
+    margin-left: 10px;
+    border-color: white;
+    background-color: white;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+
+.sub{
+    background-color: aqua;
+   
+}
+.imgg{
+    
+    height: 50px;
+    width: 150px;
+}
+.iconn{
+    height: 35px;
+    width: 35px;
+}

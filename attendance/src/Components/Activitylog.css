@@ -1,0 +1,51 @@
+.activity-title::before{
+  content: 'i';
+
+   color:rgba(26, 26, 241, 0.918);
+  width: 7px;
+  height: 15px;
+  background-color:rgba(38,38,245,0.918 );
+  margin-right: 10px;
+  border-radius: 3px;
+  font-size:35px;
+  padding-left: -2px;
+  margin-left: 30px;
+
+
+}
+.activity-mainbody{
+  
+  width: 1463px;
+height: 1116px;
+
+
+
+border-radius: 10px;
+background-color: white; 
+ color: black; 
+
+}
+.rows{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1300px;
+  height: 50px;
+  background-color: #E1E1E1;
+  margin-left: 50px;
+  color: #A1A1A1;
+  
+}
+.head{
+  margin-top: 20px;
+  text-align: center;
+}
+.done-button{
+  margin-left: 1270px;
+  margin-top: 430px;
+}
+.done-buttono{
+  position: absolute;
+  margin-left: 1270px;
+  margin-top: 100px;
+}

@@ -1,0 +1,49 @@
+.admin-formm {
+  /* margin-top: 10px; */
+  max-width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+   background: white;
+   background-color: white !important;
+}
+
+.registerrr {
+  /* font-family: Inter, sans-serif; */
+  /* font-weight: 600; */
+  font-size: 40px;
+  color: #000000;
+  /* margin-left: -1000px; */
+  margin-right: 800px;
+   font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    /* line-height: 100%; */
+    letter-spacing: 0%;
+    margin-left: -200px;
+  
+}
+
+.label-texttt {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #A1A1A1;
+}
+
+.input-texttt {
+  border-radius: 10px;
+  border: 2px solid #A1A1A1;
+    background-color: #ECEBEA !important;
+  
+  height: 50px;
+}
+.done-button{
+  margin-left: -2000px;
+   width: 200px;
+height: 37px;
+font-family: Inter;
+font-weight: 600;
+font-size: 20px;
+background-color: rgba(38, 38, 245, 0.918);
+
+}

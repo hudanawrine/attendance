@@ -1,0 +1,252 @@
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #A1A1A1;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #ECEBEA;
+    /* }
+th{
+    /* justify-content:none; */
+}
+
+*/ .icon1 {
+    margin-right: 10px;
+}
+
+.inputt {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 17px;
+    flex: 1;
+}
+
+.headline {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.EmployeesList {
+    background-color: #FAF9F6;
+    width: 100%;
+    height: 70%;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+.head-1 {
+
+    padding-right: 33px;
+    color: #A1A1A1;
+    padding-left: 50px;
+}
+
+.head-2 {
+    color: #A1A1A1;
+    background-color: #E1E1E1;
+    padding: 10px 100px;
+    border-radius: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+.image-style {
+    display: flex;
+    flex-direction: row;
+}
+
+.table-container {
+    width: 100%;
+
+    padding-top: 250px;
+}
+
+
+
+
+table {
+    width: 100%;
+    line-height: 50px;
+}
+
+.green {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #C8D7CD;
+    color: #015127;
+    font-size: 15px;
+
+}
+
+.red {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7D0A0A26;
+    color: #7D0A0A;
+    font-size: 15px;
+
+
+}
+
+.black {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00000040;
+    color: #191919;
+    font-weight: 27;
+    font-size: 15px;
+
+}
+
+.headline::before {
+    content: 'i';
+    color: rgba(38, 38, 245, 0.918);
+    width: 8px;
+    height: 40px;
+    background-color: rgba(38, 38, 245, 0.918);
+    margin-right: 10px;
+    border-radius: 3px;
+
+}
+
+.green:hover {
+    background-color: #b5abab40;
+}
+
+.red:hover {
+    background-color: #b5abab40;
+
+}
+
+.black:hover {
+    background-color: #b5abab40;
+    font-weight: 27;
+}
+
+.head-1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 27;
+}
+
+.head-2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 27;
+    font-size: 34px;
+}
+
+td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 27;
+}
+
+/* drop down css  */
+
+.dropbtn {
+    background-color: rgba(38, 38, 245, 0.918);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    WIDTH: 276PX;
+    MARGIN-LEFT: 107PX;
+    HEIGHT: 50PX;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+ .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* .dropdown-content a:hover {
+    background-color: #03ea0e
+} */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+.size {
+    font-size: 28px;
+}
+
+.status{
+    background-color: #f7f9f8;
+}
+.status1{
+    background-color: #7D0A0A;
+} */
+/* 
+.status-button {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.status-button:hover {
+    background-color: green;
+    color: white;
+} */
+
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.present:hover {
+  background-color: green;
+}
+
+.absent:hover {
+  background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
